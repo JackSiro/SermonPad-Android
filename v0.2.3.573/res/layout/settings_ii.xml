@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical"
+    	android:background="#eee"
+    	android:layout_margin="5dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cover" />
+        
+        <TextView
+            android:id="@+id/app_mode"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dip"
+            android:background="#fff"
+            android:padding="7dp"
+            android:text="App Mode"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30dip"
+            android:textStyle="bold" />
+        
+        <TextView
+	        android:id="@+id/fullname"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Installed by:"
+	        android:layout_margin="5dip"
+            android:background="#fff"
+            android:textColor="#000"
+            android:padding="5dp"
+            android:textSize="20dip" />
+        
+        <TextView
+	        android:id="@+id/phonenumber"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Phone Number:"
+	        android:layout_margin="5dip"
+            android:background="#fff"
+            android:textColor="#000"
+            android:padding="5dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <TextView
+	        android:id="@+id/church"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="The Church:"
+	        android:layout_margin="5dip"
+            android:background="#fff"
+            android:textColor="#000"
+            android:padding="5dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <TextView
+	        android:id="@+id/installed_on"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Installed on:"
+	        android:layout_margin="5dip"
+            android:background="#fff"
+            android:textColor="#000"
+            android:padding="5dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	    <TextView
+	        android:id="@+id/expired_on"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Expired on:"
+	        android:layout_margin="5dip"
+            android:background="#fff"
+            android:textColor="#000"
+            android:padding="5dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	    <TextView
+	        android:id="@+id/paid_on"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Paid on:"
+	        android:layout_margin="5dip"
+            android:background="#fff"
+            android:textColor="#000"
+            android:padding="5dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	    <Button 
+	        android:id="@+id/btnProtest"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Raise a Protest"
+	        android:layout_marginTop="10dip"
+	        android:layout_marginLeft="50dip"
+	        android:layout_marginRight="50dip"/>
+	    
+	    <Button android:id="@+id/btnConfrim"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Confirm payment"
+	        android:layout_marginTop="10dip"
+	        android:layout_marginLeft="50dip"
+	        android:layout_marginRight="50dip"
+	        android:layout_marginBottom="50dip" />
+        
+    </LinearLayout>
+    
+</ScrollView>

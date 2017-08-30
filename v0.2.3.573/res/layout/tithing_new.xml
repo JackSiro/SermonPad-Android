@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:background="@drawable/noteback"
+  	android:layout_height="fill_parent" >
+  	
+	<RelativeLayout
+	    android:id="@+id/toplayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_margin="10dp"
+		android:padding="5dp" >
+		
+	    <TextView
+	        android:id="@+id/amountLbl"
+	        android:text="Amount:"
+	        android:textColor="#000"
+	        android:layout_width="115dp"
+			android:layout_height="wrap_content"
+	        android:textSize="25sp"
+			android:padding="10dp" />
+	    
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/amountLbl"
+            android:background="@drawable/textview_border"
+            android:hint="0"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+	</RelativeLayout>
+    
+	<RelativeLayout
+	    android:id="@+id/secolayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/toplayout"
+	    android:layout_margin="10dp"
+		android:padding="5dp" >
+		
+	    
+	    <TextView
+	        android:id="@+id/sourceLbl"
+	        android:text="Source:"
+	        android:textColor="#000"
+	        android:layout_width="115dp"
+			android:layout_height="wrap_content"
+	        android:textSize="25sp"
+			android:padding="10dp" />
+	    
+        <EditText 
+            android:textSize="25sp"
+			android:id="@+id/source"
+			android:padding="10dp"
+			android:background="@drawable/textview_border"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/sourceLbl"
+	        android:textColor="#000"
+			android:singleLine="true"
+			android:imeOptions="actionNext" />
+			
+	</RelativeLayout>
+	<RelativeLayout
+	    android:id="@+id/thirdlayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/secolayout"
+	    android:layout_margin="10dp"
+		android:padding="5dp" >
+		
+	    
+	    <TextView
+	        android:id="@+id/placeLbl"
+	        android:text="Place:"
+	        android:textColor="#000"
+	        android:layout_width="115dp"
+			android:layout_height="wrap_content"
+	        android:textSize="25sp"
+			android:padding="10dp" />
+	    
+        <EditText 
+            android:textSize="25sp"
+			android:id="@+id/place"
+			android:padding="10dp"
+			android:background="@drawable/textview_border"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/placeLbl"
+	        android:textColor="#000"
+			android:singleLine="true"
+			android:imeOptions="actionNext" />
+			
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+	
+	<RelativeLayout
+		android:id="@+id/header"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:background="#FFF"
+		android:gravity="center" >
+		
+   		<TableLayout
+		    android:id="@+id/myTopbar"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
+	
+		    <TableRow
+		        android:id="@+id/tableRow1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" >
+			       
+				<TextView
+				    android:id="@+id/sermondet"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+	                android:gravity="center"
+				    android:layout_weight="1"
+				    android:background="#FFF"
+				    android:padding="10dp"
+				    android:text="Preacher"
+				    android:singleLine="true"
+				    android:textColor="#C90"
+				    android:textSize="20sp" />
+				  
+		    </TableRow>
+		</TableLayout>
+		
+	</RelativeLayout>
+	
+	<RelativeLayout
+		android:id="@+id/footer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="#C90"
+		android:gravity="center" >
+	
+	  	<TableLayout
+		    android:id="@+id/myToolbar"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
+	
+		    <TableRow
+		        android:id="@+id/tableRow2"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" >
+	
+		        <ImageButton
+		            android:id="@+id/btnprev"
+		            android:layout_width="wrap_content"
+		            android:layout_height="50dp"
+		            android:layout_weight="1"
+		            android:background="#C90"
+		            android:padding="5dp"
+		            android:onClick="Previous"
+		    		android:src="@drawable/ic_menu_prev" />
+		        
+		        <ImageButton
+		            android:id="@+id/btnnext"
+		            android:layout_width="wrap_content"
+		            android:layout_height="50dp"
+		            android:layout_weight="1"
+		            android:background="#C90"
+		            android:padding="5dp"
+		            android:onClick="Next"
+		    		android:src="@drawable/ic_menu_next" />
+		        
+		        <ImageButton
+		            android:id="@+id/btnshare"
+		            android:layout_width="wrap_content"
+		            android:layout_height="50dp"
+		            android:layout_weight="1"
+		            android:background="#C90"
+		            android:padding="5dp"
+		            android:onClick="Share"
+		    		android:src="@drawable/ic_menu_share" />
+		        
+		        <ImageButton
+		            android:id="@+id/btnminus"
+		            android:layout_width="wrap_content"
+		            android:layout_height="50dp"
+		            android:layout_weight="1"
+		            android:background="#C90"
+		            android:padding="5dp"
+		            android:onClick="Minus"
+		    		android:src="@drawable/ic_menu_minus" />
+		        
+		        <ImageButton
+		            android:id="@+id/btnplus"
+		            android:layout_width="wrap_content"
+		            android:layout_height="50dp"
+		            android:layout_weight="1"
+		            android:background="#C90"
+		            android:padding="5dp"
+		            android:onClick="Plus"
+		    		android:src="@drawable/ic_menu_plus" />
+		    </TableRow>
+		</TableLayout>
+		
+	</RelativeLayout>
+	
+	<ScrollView
+		android:id="@+id/ScrollSermon"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#CCC"
+		android:layout_below="@id/header"
+		android:layout_above="@id/footer" >
+	
+	</ScrollView>
+
+</RelativeLayout>

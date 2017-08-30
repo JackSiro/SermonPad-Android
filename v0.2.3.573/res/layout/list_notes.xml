@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="0dip" 
+	android:background="#fff"
+	android:layout_gravity="top" >
+    
+    <TableRow 
+        android:id="@+id/listitem" >
+
+       <LinearLayout
+           android:layout_width="70dp"
+           android:layout_height="70dp"
+           android:layout_gravity="center_vertical"
+           android:padding="10dp" >
+           
+			<TextView
+			    android:id="@+id/txt"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:gravity="center_vertical"
+			    android:text="id"
+			    android:textColor="#000"
+			    android:textSize="22sp"
+			    android:visibility="gone" />
+		                
+                <TextView
+                    android:id="@+id/txti"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_gravity="left"
+                    android:background="@drawable/datebg"
+                    android:gravity="right|center"
+                    android:text="@string/str_date"
+                    android:textColor="#000"
+                    android:paddingRight="15dp"
+                    android:textSize="12sp" />
+
+              </LinearLayout>
+              
+  		<TableLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="70dp"
+          android:padding="5dip"
+          android:layout_marginRight="50dp" 
+          android:layout_marginEnd="20dp"
+          android:layout_gravity="top"  >
+                
+            <TableRow>       
+
+               <TextView
+                   android:id="@+id/txtii"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="left|center_vertical"
+                   android:layout_span="1"
+                   android:layout_weight="1"
+                   android:ellipsize="marquee"
+                   android:singleLine="true"
+                   android:text="Title"
+                   android:textColor="#000000"
+                   android:textSize="15sp"
+                   android:textStyle="bold" />
+
+              </TableRow>
+              <TableRow>          
+
+                 <TextView
+                     android:id="@+id/txtiii"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="left|center_vertical"
+                     android:layout_weight="1"
+                     android:ellipsize="end"
+                     android:gravity="left"
+                     android:paddingRight="10dp"
+                     android:singleLine="true"
+                     android:text="Content"
+                     android:textColor="#000000"
+                     android:textSize="15sp" />
+
+              </TableRow>
+              <TableRow>          
+
+                 <TextView
+                     android:id="@+id/txtiv"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="left|center_vertical"
+                     android:layout_weight="1"
+                     android:gravity="left"
+                     android:paddingRight="10dp"
+                     android:singleLine="true"
+                     android:text="More Details"
+                     android:textColor="#000000"
+                     android:textSize="10sp"
+                     android:textStyle="italic" />
+
+              </TableRow>
+            </TableLayout>
+               
+       </TableRow>
+</TableLayout>
