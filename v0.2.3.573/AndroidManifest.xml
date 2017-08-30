@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jackson_siro.sermonpad"
+    android:versionCode="4"
+    android:versionName="0.2.3.573" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".AppSplash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppStart"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".BbListSermon"
+            android:label="@string/app_name_pad" >
+        </activity>
+        <activity
+            android:name=".BbLogin"
+            android:label="@string/title_activity_bb_login" 
+            android:noHistory="true"
+            android:parentActivityName=".BbListSermon" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.BbListSermon" />
+        </activity>
+        <activity
+            android:name=".BbListTithing"
+            android:label="@string/title_tithing"
+            android:parentActivityName=".BbListSermon" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.BbListSermon" />
+        </activity>
+        <activity
+            android:name=".CcSermonNew"
+            android:label="@string/title_activity_new"
+            android:parentActivityName=".BbListSermon" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.BbListSermon" />
+        </activity>
+        <activity
+            android:name=".CcSermonView"
+            android:label="@string/app_name"
+            android:parentActivityName=".BbListSermon" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.BbListSermon" />
+        </activity>
+        <activity
+            android:name=".CcSermonEdit"
+            android:label="@string/app_name"
+            android:parentActivityName=".BbListSermon" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.BbListSermon" />
+        </activity>
+        <activity
+            android:name=".CcTithingNew"
+            android:label="@string/title_activity_new"
+            android:parentActivityName=".BbListTithing" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.TithingList" />
+        </activity>
+        <activity
+            android:name=".CcTithingView"
+            android:label="@string/app_name"
+            android:parentActivityName=".BbListTithing" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.BbListTithing" />
+        </activity>
+        <activity
+            android:name=".CcTithingEdit"
+            android:label="@string/app_name"
+            android:parentActivityName=".BbListTithing" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.BbListTithing" />
+        </activity>
+        <activity
+            android:name=".SetApp"
+            android:label="@string/title_activity_set_app"
+            android:parentActivityName=".BbListSermon" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.BbListSermon" />
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".SetApp" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.SetApp" />
+        </activity>
+        <activity
+            android:name=".Settings_I"
+            android:label="Display Preferences"
+            android:parentActivityName=".SetApp" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.SetApp" />
+        </activity>
+        <activity
+            android:name=".Settings_II"
+            android:label="@string/title_activity_settings__ii"
+            android:parentActivityName=".SetApp" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.SetApp" />
+        </activity>
+        <activity
+            android:name=".FfHelpDesk"
+            android:label="@string/title_activity_help_desk"
+            android:parentActivityName=".BbListSermon" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.BbListSermon" />
+        </activity>
+        <activity
+            android:name=".FfAbout"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".BbListSermon" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.BbListSermon" />
+        </activity>
+        <activity
+            android:name=".BbListTrashbin"
+            android:label="@string/title_activity_trashed"
+            android:parentActivityName=".BbListSermon" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.sermonpad.BbListSermon" />
+        </activity>
+    </application>
+
+</manifest>
