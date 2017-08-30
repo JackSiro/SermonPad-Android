@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+	
+    <item
+        android:id="@+id/tithing"
+        android:title="@string/menu_tithes"
+        android:icon="@drawable/ic_menu_plus"
+        app:showAsAction="always"/>
+      
+    <item
+        android:id="@+id/refresh"
+        android:title="@string/menu_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        app:showAsAction="always"/>
+    
+    <item
+        android:id="@+id/delete"
+        android:title="@string/menu_delete"
+        android:icon="@drawable/ic_action_trash"
+        app:showAsAction="always"/>
+  
+</menu>

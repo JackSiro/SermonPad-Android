@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/sorting_list" android:title="@string/sortthis_list" />
+    <item android:id="@+id/menu_datei" android:title="@string/date_ascending" />
+    <item android:id="@+id/menu_dateii" android:title="@string/date_descending" />
+    <item android:id="@+id/menu_titlei" android:title="@string/title_ascending" />
+    <item android:id="@+id/menu_titleii" android:title="@string/title_descending" />
+    <item android:id="@+id/menu_placei" android:title="@string/place_ascending" />
+    <item android:id="@+id/menu_placeii" android:title="@string/place_descending" />
+    <item android:id="@+id/menu_preacheri" android:title="@string/preacher_ascending" />
+    <item android:id="@+id/menu_preacherii" android:title="@string/preacher_descending" />
+    <item android:id="@+id/menu_ascending" android:title="@string/sorting_ascending" />    
+    <item android:id="@+id/menu_default" android:title="@string/sorting_default" />    
+</menu>
