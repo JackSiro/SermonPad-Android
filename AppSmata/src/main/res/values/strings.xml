@@ -1,0 +1,250 @@
+<resources>
+    <string name="action_about">About SermonPad</string>
+    <string name="action_account">Account</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_discard">Discard</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_archive">Archive this note</string>
+    <string name="action_archived">Archived</string>
+    <string name="action_trashbin">Trashbin</string>
+    <string name="action_tithing">Tithing Monitor</string>
+    <string name="action_done">Done</string>
+    <string name="action_infor">Information</string>
+    <string name="action_help">Help &amp; Feedback</string>
+    <string name="action_home">Home</string>
+    <string name="action_drafts">Drafts</string>
+    <string name="action_more">More Options</string>
+    <string name="action_next">Next</string>
+    <string name="action_password">Forgot Password?</string>
+    <string name="action_proceed">Proceed</string>
+    <string name="action_register">Add a Student</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_signin">Sign In Now</string>
+    <string name="action_signup">Sign Up Now</string>
+    <string name="action_students">Students</string>
+    <string name="action_username">Forgot Username?</string>
+    <string name="action_download">Download</string>
+    <string name="action_search">Search</string>
+    <string name="app_name">SermonPad</string>
+    <string name="app_sermons">SermonPad (%1$s)</string>
+    <string name="app_drafts">Drafts</string>
+    <string name="app_drafted">Drafts (%1$s)</string>
+    <string name="app_archive">Archives</string>
+    <string name="app_archived">Archives (%1$s)</string>
+    <string name="app_trash">Trashbin</string>
+    <string name="app_trashbin">Trashbin (%1$s)</string>
+
+    <string name="error_invalid_mobile">This mobile number is invalid</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_input">This input is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="other_apps">My Other Apps</string>
+
+    <string name="forgot_pin">Forgot your Pin?</string>
+    <string name="no_student">You have no students</string>
+    <string name="or_option"> OR SIMPLY </string>
+    <string name="prompt_firstname">First Name</string>
+    <string name="prompt_lastname">Last Name</string>
+    <string name="prompt_handle">Mobile Phone</string>
+    <string name="prompt_location">Location</string>
+    <string name="prompt_gender">Gender</string>
+    <string name="prompt_dobirth">Date of Birth</string>
+    <string name="prompt_class">Class</string>
+    <string name="prompt_password">Your PIN</string>
+
+    <plurals name="students_count">
+        <item quantity="one">You have %1$d student</item>
+        <item quantity="other">You have %1$d students</item>
+    </plurals>
+    <string name="account_signin">Account Sign In</string>
+    <string name="account_signup">Account Sign Up</string>
+    <string name="title_activity_bb_account">Your Account on Sermon Pad</string>
+    <string name="title_activity_cc_home">My Sermons</string>
+    <string name="title_trashbin">Trashbin</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="user_name">Jack Siro</string>
+    <string name="user_contact">0711 474 787</string>
+    <string name="user_more">More details</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_dd_register">New Student</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_dd_student">Student Details</string>
+
+    <string name="title_activity_ee_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_cc_account">My Account</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="title_activity_bb_signin">Sign In to Your Account</string>
+    <string name="signin_description">Get started by entering your mobile phone and pin to sign in</string>
+    <string name="title_activity_bb_signup">Sign Up to Your Account</string>
+    <string name="signup_description">Get started by entering your details to sign up</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="select_gender">Select your gender</string>
+    <string name="select_county">Select your county</string>
+    <string name="select_class">Select your class</string>
+    <string name="string_male">Male</string>
+    <string name="string_female">Female</string>
+    <string name="developer">© Jack Siro</string>
+    <string name="title_activity_xx_login">Sign in</string>
+    <string name="action_signout">Sign Out</string>
+    <string name="action_papers">Papers</string>
+    <string name="title_activity_dd_papers">Select Papers</string>
+    <string name="just_amin">Just a Minute ... </string>
+    <string name="proceed">Proceed</string>
+    <string name="cancel">Cancel</string>
+    <string name="title">Title</string>
+    <string name="details">Details</string>
+    <string name="description">Description</string>
+    <string name="sign_you_out">Are you sure you want to sign out of SermonPad? You can always pickup from where you left when you sign in again.</string>
+    <string name="title_activity_dd_paper_view">Paper View</string>
+
+    <string name="btn_class">Classes</string>
+    <string name="btn_sortby">Sort by</string>
+    <string name="btn_show">Show Grid</string>
+    <string name="sort_by">Sort Papers by</string>
+    <string name="search_label">Search Notes</string>
+    <string name="search_hint">Search SermonPad</string>
+    <string name="elimu_search">SermonPad Search</string>
+    <string name="title_activity_cc_searchable">Select Papers</string>
+    <string name="title_activity_dd_online">Online Papers</string>
+    <string name="title_recent">Recent</string>
+    <string name="title_featured">Feaured</string>
+    <string name="title_wishlist">Wishlist</string>
+    <string name="title_activity_dd_online_view">Online Paper View</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="save_new_note">Save a New Note</string>
+    <string name="your_new_text">Type your note here</string>
+    <string name="title_activity_dd_note_pad">Note Editor</string>
+    <string name="note_title">Title of the Sermon</string>
+    <string name="note_preacher">Name of the Preacher (Optional)</string>
+    <string name="note_place">Place of Preaching (Optional)</string>
+    <string name="now_recording">Recording</string>
+    <string name="paused_recording">Paused</string>
+    <string name="durations">00:00</string>
+    <string name="timeago">A moment ago</string>
+    <string name="list_title">Title of the note</string>
+    <string name="list_extra">Preacher Name, Place Name</string>
+    <string name="list_content">This is a summary of the note content which is now saved in the database</string>
+    <string name="time_ago_prefix"></string>
+    <string name="time_ago_suffix">ago</string>
+    <string name="time_ago_seconds">%1$s secs</string>
+    <string name="time_ago_minute">%1$s min</string>
+    <string name="time_ago_minutes">%1$s mins</string>
+    <string name="time_ago_hour">%1$s hr</string>
+    <string name="time_ago_hours">%1$s hrs</string>
+    <string name="time_ago_day">%1$s day</string>
+    <string name="time_ago_days">%1$s days</string>
+    <string name="time_ago_month">%1$s mon</string>
+    <string name="time_ago_months">%1$s mons</string>
+    <string name="time_ago_year">%1$s yr</string>
+    <string name="time_ago_years">%1$s yrs</string>
+    <string name="untitle_sermon">Untitled Sermon</string>
+    <string name="title_my_sermons">My Sermons (%1$s)</string>
+    <string name="thithing_monitor">Tithing Monitor</string>
+    <string name="title_activity_ee_about">About this App</string>
+    <string name="this_app">This app bla, bla, bla, and it has come along way bla, bla, bla, doing this stuff</string>
+    <string name="dear_appuser">Dear %1$s user!</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="about_app_description">"Am so excited that you took time to install this great appllication on your device. I want to assure you that you won\'t be dissapointed with having this app on your phone. \n\nSermonPad is basically a church app that you can use to save notes when in a church service by noting the preacher\'s name, place\'s name, and off course the notes in points form as you will realize when using this app. Unlike other apps, SermonPad does not bore you with adverts just in case you forgot to turn off mobile data or wifi connection. More features that will excite you into looking for this app everytime you reinstall your apps are coming out soon. Please keep checking for updates on playstore to keep yourself upto date. \n\n God bless you!\nJack Siro \n\nNairobi, Kenya."</string>
+
+    <string name="appone_title">vSongBook</string>
+    <string name="appone_install">Install vSongBook</string>
+    <string name="appone_description">vSongBook is an app gives you the freedom to sing anywhere anytime by turning your device into a virtual songbook. It features popular songbooks sang by believers such as Songs of Worship, Nyimbo za Injili, Tenzi za Rohoni, Nyimbo cia Kuinira Ngai, Mbathi sya Kumutaia Ngai which once saved offline will allow you to sing from the comfort of your device.</string>
+    <string name="apptwo_title">Quote of the Day</string>
+    <string name="apptwo_install">Install Quote of the Day</string>
+    <string name="apptwo_description">Quote of the Day allows you to access Quotes of the Day from the www.branham.org website while in offline mode and also lets you access the previous quotes you might have missed. It features four languages: English, French, Portuguese and Spanish</string>
+    <string name="appthree_title">mBible</string>
+    <string name="appthree_install">Install mBible</string>
+    <string name="appthree_description">mBible is an app gives you the freedom to sing anywhere anytime by turning your device into a virtual songbook. It features popular songbooks sang by believers such as Songs of Worship, Nyimbo za Injili, Tenzi za Rohoni, Nyimbo cia Kuinira Ngai, Mbathi sya Kumutaia Ngai which once saved offline will allow you to sing from the comfort of your device.</string>
+    <string name="install_later">Not Now</string>
+    <string name="install_now">Install</string>
+    <string name="title_activity_ee_tithing">Tithing Monitor</string>
+    <string name="sub_note_cleared">Text in sub note cleared!</string>
+    <string name="nothing_toclear">Oh My! Nothing to clear</string>
+    <string name="nothing_toadd">Oh My! Nothing to add to your note!</string>
+    <string name="feature_unavailable">Oh My! This feature is not available currently!</string>
+    <string name="about_semonpad">About %1$s</string>
+    <string name="tithing_at">Tithing @ %1$s/=</string>
+    <string name="payment_amount">Amount</string>
+    <string name="payment_source">Source (Optional)</string>
+    <string name="payment_place">Place (Optional)</string>
+</resources>

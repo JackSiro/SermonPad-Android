@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jackson_siro.sermonpad.BbAccount">
+
+    <item
+        android:id="@+id/action_password"
+        android:icon="@android:drawable/ic_menu_help"
+        android:orderInCategory="100"
+        android:title="@string/action_password"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_help"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:orderInCategory="100"
+        android:title="@string/action_help"
+        app:showAsAction="ifRoom" />
+
+</menu>

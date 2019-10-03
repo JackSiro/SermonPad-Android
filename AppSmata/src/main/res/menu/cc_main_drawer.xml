@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/account_menus" >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/action_home" />
+        <item
+            android:id="@+id/nav_draft"
+            android:icon="@drawable/ic_drafts"
+            android:title="@string/action_drafts" />
+        <item
+            android:id="@+id/nav_archive"
+            android:icon="@drawable/ic_archive"
+            android:title="@string/action_archived" />
+        <item
+            android:id="@+id/nav_trash"
+            android:icon="@drawable/ic_delete"
+            android:title="@string/action_trashbin" />
+        <item
+            android:id="@+id/nav_tithes"
+            android:icon="@drawable/ic_tithing"
+            android:title="@string/action_tithing" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account"
+            android:title="@string/action_account" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/action_settings" />
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="@string/action_signout" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_help"
+            android:title="@string/action_help" />
+        <item
+            android:id="@+id/nav_about"
+            android:title="@string/action_about" />
+    </group>
+</menu>

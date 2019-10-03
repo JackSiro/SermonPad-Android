@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jackson_siro.sermonpad.ui.DdNotePad">
+
+    <item
+        android:id="@+id/action_discard"
+        android:icon="@drawable/ic_action_clear"
+        android:title="@string/action_discard"
+        app:showAsAction="always"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_action_delete"
+        android:title="@string/action_delete"
+        app:showAsAction="always"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/action_archive"
+        android:orderInCategory="100"
+        android:title="@string/action_archive"
+        app:showAsAction="never"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/action_infor"
+        android:orderInCategory="100"
+        android:title="@string/action_infor"
+        app:showAsAction="never" />
+
+</menu>
