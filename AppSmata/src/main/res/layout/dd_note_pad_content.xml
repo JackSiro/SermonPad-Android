@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.DdNotePad"
+    tools:showIn="@layout/dd_note_pad">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="#EEE">
+
+        <ScrollView
+            android:id="@+id/form_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_rounded" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:id="@+id/ntitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/note_title"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:id="@+id/npreacher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/note_preacher"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:id="@+id/nplace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/note_place"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/proceed_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/action_proceed"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:background="@drawable/bg_button" />
+            </LinearLayout>
+        </ScrollView>
+
+        <TableRow
+            android:id="@+id/form_recorder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/form_title"
+            android:background="#FFF"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recording"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/now_recording"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/durations"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabmic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_action_mic" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabmicdone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_action_done" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabmicclear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_action_clear" />
+
+
+        </TableRow>
+
+        <ListView
+            android:id="@+id/list_items"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/form_recorder"
+            android:divider="@null">
+
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/form_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginEnd="60dp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/bg_rounded" >
+
+            <TableRow
+                android:id="@+id/myToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btnkeyshow"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_button"
+                    android:contentDescription="@string/app_name"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_action_keyboard" />
+
+                <ImageButton
+                    android:id="@+id/btnkeyhide"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_button"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/ic_action_keyboard_hide" />
+
+
+                <HorizontalScrollView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:id="@+id/btnundo"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/bg_button"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_action_undo" />
+
+                        <ImageButton
+                            android:id="@+id/btnredo"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/bg_button"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_action_redo" />
+
+                        <ImageButton
+                            android:id="@+id/btnbold"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/bg_button"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_action_bold" />
+
+                        <ImageButton
+                            android:id="@+id/btnitalic"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/bg_button"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_action_italic" />
+
+                        <ImageButton
+                            android:id="@+id/btnunderline"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/bg_button"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_action_underline" />
+
+                        <ImageButton
+                            android:id="@+id/btncopy"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/bg_button"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_action_copy" />
+
+                        <ImageButton
+                            android:id="@+id/btnselect"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/bg_button"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_action_selectall" />
+
+                        <ImageButton
+                            android:id="@+id/btnformat"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/bg_button"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/ic_action_textformat" />
+
+                        <ImageButton
+                            android:id="@+id/btnfile"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/bg_button"
+                            android:contentDescription="@string/app_name"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_action_attach" />
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <ImageButton
+                    android:id="@+id/btnpaste"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_button"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/ic_action_paste" />
+                
+                <ImageButton
+                    android:id="@+id/btnclear"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_button"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/ic_action_clear" />
+
+            </TableRow>
+
+            <EditText
+                android:id="@+id/ncontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
+                android:ems="10"
+                android:hint="@string/your_new_text"
+                android:inputType="textMultiLine"
+                android:background="@drawable/bg_textview_gray"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

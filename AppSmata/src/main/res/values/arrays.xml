@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="GenderList">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="SortList">
+        <item>Date Ascending</item>
+        <item>Date Descending</item>
+        <item>Title Ascending</item>
+        <item>Title Descending</item>
+        <item>Subject Ascending</item>
+        <item>Subject Descending</item>
+    </string-array>
+
+    <string-array name="CountiesList">
+        <item>001 - Mombasa</item>
+        <item>002 - Kwale</item>
+        <item>003 - Kilifi</item>
+        <item>004 - Tana River</item>
+        <item>005 - Lamu</item>
+        <item>006 - Taita–Taveta</item>
+        <item>007 - Garissa</item>
+        <item>008 - Wajir</item>
+        <item>009 - Mandera</item>
+        <item>010 - Marsabit</item>
+        <item>011 - Isiolo</item>
+        <item>012 - Meru</item>
+        <item>013 - Tharaka-Nithi</item>
+        <item>014 - Embu</item>
+        <item>015 - Kitui</item>
+        <item>016 - Machakos</item>
+        <item>017 - Makueni</item>
+        <item>018 - Nyandarua</item>
+        <item>019 - Nyeri</item>
+        <item>020 - Kirinyaga</item>
+        <item>021 - Murang\'a</item>
+        <item>022 - Kiambu</item>
+        <item>023 - Turkana</item>
+        <item>024 - West Pokot</item>
+        <item>025 - Samburu</item>
+        <item>026 - Trans-Nzoia</item>
+        <item>027 - Uasin Gishu</item>
+        <item>028 - Elgeyo-Marakwet</item>
+        <item>029 - Nandi</item>
+        <item>030 - Baringo</item>
+        <item>031 - Laikipia</item>
+        <item>032 - Nakuru</item>
+        <item>033 - Narok</item>
+        <item>034 - Kajiado</item>
+        <item>035 - Kericho</item>
+        <item>036 - Bomet</item>
+        <item>037 - Kakamega</item>
+        <item>038 - Vihiga</item>
+        <item>039 - Bungoma</item>
+        <item>040 - Busia</item>
+        <item>041 - Siaya</item>
+        <item>042 - Kisumu</item>
+        <item>043 - Homa Bay</item>
+        <item>044 - Migori</item>
+        <item>045 - Kisii</item>
+        <item>046 - Nyamira</item>
+        <item>047 - Nairobi</item>
+    </string-array>
+    <string-array name="ClassList">
+        <item>Class 4</item>
+        <item>Class 5</item>
+        <item>Class 6</item>
+        <item>Class 7</item>
+        <item>Class 8</item>
+    </string-array>
+
+</resources>
